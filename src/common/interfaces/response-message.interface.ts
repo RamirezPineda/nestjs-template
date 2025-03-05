@@ -1,5 +1,5 @@
 export interface ResponseMessage<T> {
-  status: number;
+  statusCode?: number;
   message?: string | string[];
   error?: string;
   data?: T;
