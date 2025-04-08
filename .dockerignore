@@ -1,0 +1,9 @@
+*
+!/package.json
+!/package-lock.json
+!/yarn.lock
+!/pnpm-lock.yaml
+!/tsconfig.build.json
+!/tsconfig.json
+!/nest-cli.json
+!/src
