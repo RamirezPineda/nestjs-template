@@ -1,4 +1,4 @@
-FROM node:23-alpine3.20 AS base
+FROM node:23-alpine AS base
 
 ENV DIR=/app
 WORKDIR $DIR
@@ -6,7 +6,7 @@ WORKDIR $DIR
 
 FROM base AS builder
 
-RUN apk update && apk upgrade --no-cache && npm install -g pnpm@10.8.0
+RUN apk update && npm install -g pnpm@10.8.0
 
 COPY package.json pnpm-lock.yaml $DIR/
 
